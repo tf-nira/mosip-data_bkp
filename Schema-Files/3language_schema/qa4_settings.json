@@ -1,0 +1,82 @@
+[
+	{
+		"name": "scheduledjobs",
+		"description": {
+			"ara": "إعدادات الوظائف المجدولة",
+			"fra": "Paramètres des travaux planifiés",
+			"kan": "ನಿಗದಿತ ಉದ್ಯೋಗಗಳ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+			"hin": "अनुसूचित नौकरी सेटिंग्स",
+			"tam": "திட்டமிடப்பட்ட வேலைகள் அமைப்புகள்",
+			"eng": "Scheduled Jobs Settings"
+		},
+		"label": {
+			"ara": "إعدادات الوظائف المجدولة",
+			"fra": "Paramètres des travaux planifiés",
+			"kan": "ನಿಗದಿತ ಉದ್ಯೋಗಗಳ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+			"hin": "अनुसूचित नौकरी सेटिंग्स",
+			"tam": "திட்டமிடப்பட்ட வேலைகள் அமைப்புகள்",
+			"eng": "Scheduled Jobs Settings"
+		},
+		"fxml": "ScheduledJobsSettings.fxml",
+		"icon": "scheduledjobs.png",
+		"order": "1",
+		"shortcut-icon": "scheduledjobs-shortcut.png",
+		"access-control": [
+			"REGISTRATION_SUPERVISOR"
+		]
+	},
+	{
+		"name": "globalconfigs",
+		"description": {
+			"ara": "إعدادات التكوين العامة",
+			"fra": "Paramètres de configuration globale",
+			"kan": "ಜಾಗತಿಕ ಸಂರಚನಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+			"hin": "वैश्विक विन्यास सेटिंग्स",
+			"tam": "உலகளாவிய கட்டமைப்பு அமைப்புகள்",
+			"eng": "Global Config Settings"
+		},
+		"label": {
+			"ara": "إعدادات التكوين العامة",
+			"fra": "Paramètres de configuration globale",
+			"kan": "ಜಾಗತಿಕ ಸಂರಚನಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+			"hin": "वैश्विक विन्यास सेटिंग्स",
+			"tam": "உலகளாவிய கட்டமைப்பு அமைப்புகள்",
+			"eng": "Global Config Settings"
+		},
+		"fxml": "GlobalConfigSettings.fxml",
+		"icon": "globalconfigs.png",
+		"order": "2",
+		"shortcut-icon": "globalconfigs-shortcut.png",
+		"access-control": [
+			"REGISTRATION_SUPERVISOR",
+			"REGISTRATION_OFFICER"
+		]
+	},
+	{
+		"name": "devices",
+		"description": {
+			"ara": "إعدادات الجهاز",
+			"fra": "Réglages de l'appareil",
+			"kan": "ಸಾಧನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+			"hin": "उपकरण सेटिंग्स",
+			"tam": "சாதன அமைப்புகள்",
+			"eng": "Device Settings"
+		},
+		"label": {
+			"ara": "إعدادات الجهاز",
+			"fra": "Réglages de l'appareil",
+			"kan": "ಸಾಧನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+			"hin": "उपकरण सेटिंग्स",
+			"tam": "சாதன அமைப்புகள்",
+			"eng": "Device Settings"
+		},
+		"fxml": "DeviceSettings.fxml",
+		"icon": "devices.png",
+		"order": "3",
+		"shortcut-icon": "devices-shortcut.png",
+		"access-control": [
+			"REGISTRATION_SUPERVISOR",
+			"REGISTRATION_OFFICER"
+		]
+	}
+]
