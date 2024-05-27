@@ -92,7 +92,6 @@ jobs:
             -e BRANCH=${{ env.BRANCH_NAME }} \
             mosipdev/masterdata-loader:develop
 
-
       - name: docker ps command
         run: docker ps -a
       - name: Print Logs of masterdata_loader
