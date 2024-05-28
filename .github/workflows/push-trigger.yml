@@ -1,4 +1,5 @@
 name: Setup Postgresql & Run postgres_init for MOSIP_Master & Run docker container
+
 on:
   pull_request:
     types: [opened, reopened, synchronize]
@@ -44,7 +45,7 @@ jobs:
             -e DB_SERVERIP=postgresql \
             -e DB_PORT=5432 \
             -e SU_USER=postgres \
-            -e DML_FLAG=true \
+            -e DML_FLAG=0 \
             -e GIT_REPO_URL=https://github.com/mosip/admin-services.git \
             -e GIT_BRANCH=develop \
             -e SU_USER_PWD=${{ env.SU_USER_PWD }} \
