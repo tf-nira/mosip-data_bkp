@@ -52,21 +52,22 @@ jobs:
             -e DBUSER_PWD=${{ env.DBUSER_PWD }} \
             mosipdev/postgres-init:develop
 
-      - name: Check whether db_init has errors in Logs
-        run: |
-          if docker logs -f mosip_master_container | grep -q "ERROR"; then
-            echo "Error found in mosip_master_container logs."
-            exit 1
-          else
-            echo "No errors found in mosip_master_container logs."
-          fi
-
       - name: docker ps command
         run: docker ps -a
       - name: Print Logs of mosip_master
         run: |
           # Display mosip_master_container logs
           docker logs -f mosip_master_container
+      
+      - name: Check whether db_init has errors in Logs
+        run: |
+          if docker logs  mosip_master_container | grep  -qi "error"; then
+            echo "Error found in mosip_master_container logs."
+            exit 1
+          else
+            echo "No errors found in mosip_master_container logs."
+          fi
+
 
       - name: Set environment variables
         run: |
