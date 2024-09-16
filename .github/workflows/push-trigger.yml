@@ -65,7 +65,7 @@ jobs:
         run: docker ps -a
       - name: Print Logs of mosip_master
         run: |
-          # Display mosip_master_container logs
+          ## Display mosip_master_container logs
           docker logs -f mosip_master_container
       - name: Setup branch and env
         run: |
