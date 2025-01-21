@@ -14,7 +14,7 @@ on:
       - develop
       - 1.2.0.1
       - MOSIP*
-      - tf_nira_dev
+      - nira_master
 env:
   DBUSER_PWD: mosip123
   SU_USER_PWD: abc123
