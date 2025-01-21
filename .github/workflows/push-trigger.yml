@@ -69,9 +69,12 @@ jobs:
           docker logs -f mosip_master_container
       - name: Setup branch and env
         run: |
-          # Strip git ref prefix from version
-          echo "BRANCH_NAME=$(echo ${{ github.ref }} | sed -e 's,.*/\(.*\),\1,')" >> $GITHUB_ENV
-          echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
+          if [ "${{ github.head_ref }}" != "" ]; then
+            echo "BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
+          else
+            echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+          fi
+            echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
       - name: Run masterdata-loader
         run: |
           docker run -itd \
